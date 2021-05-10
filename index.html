@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confetti Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.skypack.dev/canvas-confetti@latest">
+</head>
+<body>
+    <p>Confetti JS Animation Using Javascript</p>
+
+    <script src="./confetti.js"></script>
+    <script>
+        const start = () => {
+            setTimeout(function() {
+                confetti.start();
+            }, 1000);
+        };
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop();
+            }, 5000);
+        };
+        start();
+        stop();
+    </script>
+</body>
+</html>
